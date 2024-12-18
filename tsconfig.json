@@ -10,7 +10,7 @@
     },
     "include": [
       "index.ts",
-      "libfile.ts"                           
+      "focusse.ts"                           
     ],
     "exclude": [
       "node_modules"                          
