@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FocusLock Web Example</title>
+  <style>
+    #modal {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: white;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    #modal button {
+      margin: 5px;
+    }
+  </style>
+</head>
+<body>
+  <button id="open-modal">Open Modal</button>
+
+  <div id="modal" tabindex="-1" role="dialog">
+    <p>Focus is trapped within this modal.</p>
+    <button>Button 1</button>
+    <button>Button 2</button>
+    <button id="close-modal">Close Modal</button>
+  </div>
+
+  <script type="module" src="./index.ts"></script>
+</body>
+</html>
